@@ -7,7 +7,15 @@ format: html
 
 # Executive Summary
 
-Student loan debt is one of the biggest financial challenges that a lot of adults face. Most student loan borrowers take out loans and don't think about the implications of paying back this money in the future. The purpose of this project is to analyze how student loan debt impacts an individual's ability to save money and manage their expenses post college. By providing a data driven resource for past, present, and future loan borrowers, it gives these borrowers a better understanding of the long term financial consequences of taking out student loans. The data for this project comes from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that tracks American household income, assets, and debts since 1989. For this project, I looked at four specific demographic breakdowns of the SCF median data by looking at: age group, income, education level, and race/ethnicity. Each group was extracted, merged, and transformed into a single unified data frame spanning 2004 to 2022. With the analysis conducted, it showed that education loan balances have increased since 2004 and households under 35 carrying the biggest debt burden compared to their income. People with college degrees do take on more student debt, but they also tend to have a higher net worth and more retirement savings over time. Race and ethnicity also played a huge part as black households carry education debt that makes up a much bigger share of their total net worth compared to other groups, which shows that student loans affect some race and ethnic groups more than others.
+Student loan debt is one of the biggest financial challenges that a lot of adults face. Most student loan borrowers take out loans and don't think about the implications of paying back
+this money in the future. The purpose of this project is to analyze how student loan debt impacts an individual's ability to save money and manage their expenses post college. By
+providing a data driven resource for past, present, and future loan borrowers, it gives these borrowers a better understanding of the long term financial consequences of taking out
+student loans. The data for this project comes from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that tracks American household
+income, assets, and debts since 1989. For this project, I looked at four specific demographic breakdowns of the SCF median data by looking at: age group, income, education level, and
+race/ethnicity. Each group was extracted, merged, and transformed into a single unified data frame spanning 2004 to 2022. With the analysis conducted, it showed that education loan
+balances have increased since 2004 and households under 35 carrying the biggest debt burden compared to their income. People with college degrees do take on more student debt, but they
+also tend to have a higher net worth and more retirement savings over time. Race and ethnicity also played a huge part as black households carry education debt that makes up a much bigger
+share of their total net worth compared to other groups, which shows that student loans affect some race and ethnic groups more than others.
 
 # Library Imports
 
@@ -24,7 +32,11 @@ import matplotlib.pyplot as plt
 
 **SITE: https://www.federalreserve.gov/econres/scf/dataviz/scf/chart/#series:Education_Installment_Loans;demographic:all;population:1;units:median;range:1989,2022**
 
-The data to complete this project is from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that collects financial information from American households including income, assets and debt, to name a few. Households are selected through a sampling process and are interviewed directly. The households interviewed self report their net worth and loan amounts, as well as other financial assets but not viewed in this analysis. The SCF has been conducting surveys since 1989 and the specific csv's used in the project looks at the median of financial values with four specific demographic groups: age group, income category, education level, and race/ethnicity from 1989 to 2022. Below are the 9 variables from each demographic groups used to merge together. 
+The data to complete this project is from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that collects financial information from
+American households including income, assets and debt, to name a few. Households are selected through a sampling process and are interviewed directly. The households interviewed self
+report their net worth and loan amounts, as well as other financial assets but not viewed in this analysis. The SCF has been conducting surveys since 1989 and the specific csv's used 
+in the project looks at the median of financial values with four specific demographic groups: age group, income category, education level, and race/ethnicity from 1989 to 2022. Below 
+are the 9 variables from each demographic groups used to merge together. 
 
 year: What year the survey was done (Numeric; int)  
 group_label: The demographic group label (Text; string) 
@@ -83,7 +95,9 @@ scf_combined.tail()
 
 # Transformation Processes
 
-For the transformation process, I filtered out the survey years 1989, 1992, 1995, 1998, and 2001 from the combined data frame. I did this because education loan balances from those years are close to zero and are not relevant to the modern student debt crisis that this project is focused on. Keeping only 2004 and beyond makes the analysis more meaningful and relevant to current and recent borrowers.
+For the transformation process, I filtered out the survey years 1989, 1992, 1995, 1998, and 2001 from the combined data frame. I did this because education loan balances from those years
+are close to zero and are not relevant to the modern student debt crisis that this project is focused on. Keeping only 2004 and beyond makes the analysis more meaningful and relevant to
+current and recent borrowers.
 
 ```{python}
 # years that I do not want to conduct analysis on
@@ -97,7 +111,12 @@ scf_combined = scf_combined.reset_index(drop=True)
 # Analysis & Evaluation
 
 **Descriptive Statistics and Visualizations**
-Looking at the data overall, there are no missing values across any of the variables which makes sense since the SCF uses a process to fill in any missing responses. The descriptive stats show that education loan balances vary a lot across different demographic groups and have grown significantly over time. The correlation between education loans and net worth shows a positive relationship, meaning groups with higher education debt also tend to have higher net worth, which seems counterintuitive but makes sense at the group level since college educated households borrow more but also earn more over time. The line chart shows that households under 35 carry the highest education loan balances across all years, which is expected since they are the closest to their borrowing years and have had the least time to pay down their debt. The bar chart shows that in 2022, education loan balances are similar across racial groups in dollar amounts, however, the burden is much heavier for black households compared to their total net worth.
+Looking at the data overall, there are no missing values across any of the variables which makes sense since the SCF uses a process to fill in any missing responses. The descriptive stats
+show that education loan balances vary a lot across different demographic groups and have grown significantly over time. The correlation between education loans and net worth shows a
+positive relationship, meaning groups with higher education debt also tend to have higher net worth, which seems counterintuitive but makes sense at the group level since college educated
+households borrow more but also earn more over time. The line chart shows that households under 35 carry the highest education loan balances across all years, which is expected since they
+are the closest to their borrowing years and have had the least time to pay down their debt. The bar chart shows that in 2022, education loan balances are similar across racial groups in
+dollar amounts, however, the burden is much heavier for black households compared to their total net worth.
 
 **Bias and Unbalanced Patterns**
 One of the biggest limitations of this data is that all the values are group level medians and not from individual households. The values only represent the median of a group of people and not for a single person. You have to be careful about making any strong and concrete conclusions from this data. Looking at racial disparities, black households carry education debt that makes up a much bigger share of their total net worth compared to other groups. This shows that even when loan amounts look similar across groups, the financial burden is not the same for everyone.
@@ -158,11 +177,17 @@ race_2022_bias[["group_label", "Education_Installment_Loans", "Net_Worth", "edu_
 
 # Extra Mile
 
-The extra effort in this project is split across two areas. The first is the extraction and merging process. Instead of working with one CSV file, I had to load four separate CSV files, select the same specific columns from each one, rename a column across all four data frames for clarity, and then stack them all together into one unified data frame for analysis. The second area is the bias analysis, where I created a derived variable that calculates education loan debt as a share of total net worth by racial group. This goes beyond basic descriptive stats and directly supports the research question about how student loans impact different groups financially.
+The extra effort in this project is split across two areas. The first is the extraction and merging process. Instead of working with one CSV file, I had to load four separate CSV files,
+select the same specific columns from each one, rename a column across all four data frames for clarity, and then stack them all together into one unified data frame for analysis. The
+second area is the bias analysis, where I created a derived variable that calculates education loan debt as a share of total net worth by racial group. This goes beyond basic descriptive
+stats and directly supports the research question about how student loans impact different groups financially.
 
 # Data Product & Guide
 
-The final data product is a CSV file called scf_final.csv that contains the cleaned and filtered SCF data spanning 2004 to 2022 across the four demographic groups: age group, income, education level, and race/ethnicity mentioned in the Sources and Extraction section of this project. To load the file use pd.read_csv("scf_final.csv") in Python or open it directly in Microsoft Excel or Google Sheets. Each row represents the median financial values for a specific demographic group in a given survey year. The variables included are the same nine columns described in the Sources and Extraction section of this project.
+The final data product is a CSV file called scf_final.csv that contains the cleaned and filtered SCF data spanning 2004 to 2022 across the four demographic groups: age group, income,
+education level, and race/ethnicity mentioned in the Sources and Extraction section of this project. To load the file use pd.read_csv("scf_final.csv") in Python or open it directly in
+Microsoft Excel or Google Sheets. Each row represents the median financial values for a specific demographic group in a given survey year. The variables included are the same nine columns
+described in the Sources and Extraction section of this project.
 
 ```{python}
 # want to convert the final dataset so I had combined dataframe as a csv dataset
