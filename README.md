@@ -1,6 +1,6 @@
 # Student Loan Debt & Financial Outcomes Across Demographic Groups
 
-**Course:** INST447, Spring 2026 — Tayyab Fiaz
+**Course:** INST447, Spring 2026 | Completed by Tayyab Fiaz
 
 ## Overview
 This project analyzes how student loan debt affects an individual's ability to save money and build wealth after college, broken down by age group, income, education level, and race/ethnicity. Data is sourced from the Federal Reserve Board's Survey of Consumer Finances (SCF), a triennial household survey tracking income, assets, and debts since 1989.
