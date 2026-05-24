@@ -21,5 +21,5 @@ Four CSV files (by demographic group) were merged into a single unified dataset 
 - `scf_final.csv` — Cleaned, merged output dataset
 - Source CSVs: `interactive_bulletin_charts_agecl_median.csv`, `_edcl_`, `_inccat_`, `_racecl4_`
 
-## Tools
+## Tools used
 Python · pandas · matplotlib
