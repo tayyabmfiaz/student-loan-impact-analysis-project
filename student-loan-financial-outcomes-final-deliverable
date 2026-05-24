@@ -7,15 +7,15 @@ format: html
 
 # Executive Summary
 
-Student loan debt is one of the biggest financial challenges that a lot of adults face. Most student loan borrowers take out loans and don't think about the implications of paying back
-this money in the future. The purpose of this project is to analyze how student loan debt impacts an individual's ability to save money and manage their expenses post college. By
-providing a data driven resource for past, present, and future loan borrowers, it gives these borrowers a better understanding of the long term financial consequences of taking out
-student loans. The data for this project comes from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that tracks American household
-income, assets, and debts since 1989. For this project, I looked at four specific demographic breakdowns of the SCF median data by looking at: age group, income, education level, and
-race/ethnicity. Each group was extracted, merged, and transformed into a single unified data frame spanning 2004 to 2022. With the analysis conducted, it showed that education loan
-balances have increased since 2004 and households under 35 carrying the biggest debt burden compared to their income. People with college degrees do take on more student debt, but they
-also tend to have a higher net worth and more retirement savings over time. Race and ethnicity also played a huge part as black households carry education debt that makes up a much bigger
-share of their total net worth compared to other groups, which shows that student loans affect some race and ethnic groups more than others.
+Student loan debt is one of the biggest financial challenges that a lot of adults face. Most student loan borrowers take out loans and don't think about the implications of paying 
+backthis money in the future. The purpose of this project is to analyze how student loan debt impacts an individual's ability to save money and manage their expenses post college. 
+By providing a data driven resource for past, present, and future loan borrowers, it gives these borrowers a better understanding of the long term financial consequences of taking 
+out student loans. The data for this project comes from the Federal Reserve Board's Survey of Consumer Finances (SCF), a survey conducted every three years that tracks American 
+household income, assets, and debts since 1989. For this project, I looked at four specific demographic breakdowns of the SCF median data by looking at: age group, income, education 
+level, and race/ethnicity. Each group was extracted, merged, and transformed into a single unified data frame spanning 2004 to 2022. With the analysis conducted, it showed that education 
+loan balances have increased since 2004 and households under 35 carrying the biggest debt burden compared to their income. People with college degrees do take on more student debt, but 
+theyalso tend to have a higher net worth and more retirement savings over time. Race and ethnicity also played a huge part as black households carry education debt that makes up a much 
+bigger share of their total net worth compared to other groups, which shows that student loans affect some race and ethnic groups more than others.
 
 # Library Imports
 
