@@ -17,7 +17,7 @@ This project analyzes how student loan debt affects an individual's ability to s
 Four CSV files (by demographic group) were merged into a single unified dataset (`scf_final.csv`) covering 2004–2022.
 
 ## Files
-- `Tayyab_Fiaz_Final_Project_Notebook.qmd` — Main analysis notebook (Quarto)
+- `student-loan-financial-outcomes-final-deliverable` — Main analysis notebook (Quarto)
 - `scf_final.csv` — Cleaned, merged output dataset
 - Source CSVs: `interactive_bulletin_charts_agecl_median.csv`, `_edcl_`, `_inccat_`, `_racecl4_`
 
