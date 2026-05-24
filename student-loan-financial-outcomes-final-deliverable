@@ -119,7 +119,10 @@ are the closest to their borrowing years and have had the least time to pay down
 dollar amounts, however, the burden is much heavier for black households compared to their total net worth.
 
 **Bias and Unbalanced Patterns**
-One of the biggest limitations of this data is that all the values are group level medians and not from individual households. The values only represent the median of a group of people and not for a single person. You have to be careful about making any strong and concrete conclusions from this data. Looking at racial disparities, black households carry education debt that makes up a much bigger share of their total net worth compared to other groups. This shows that even when loan amounts look similar across groups, the financial burden is not the same for everyone.
+One of the biggest limitations of this data is that all the values are group level medians and not from individual households. The values only represent the median of a group of people 
+and not for a single person. You have to be careful about making any strong and concrete conclusions from this data. Looking at racial disparities, black households carry education debt 
+that makes up a much bigger share of their total net worth compared to other groups. This shows that even when loan amounts look similar across groups, the financial burden is not the 
+same for everyone.
 
 ```{python}
 # getting the descriptive stats for all the numeric variables in the combined dataframe
